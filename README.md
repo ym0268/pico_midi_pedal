@@ -32,6 +32,7 @@ https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
 Visual Studio 開発者コマンドプロンプトで実行してください
 ```
 cd {project root}
+git submodule update --init
 mkdir build
 cd build
 cmake -G "NMake Makefiles" .. -D FAMILY="rp2040" -D PICO_SDK_PATH="{your pico-sdk path}"
