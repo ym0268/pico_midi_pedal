@@ -1,12 +1,12 @@
 # Pedal Controller for PSS-A50
 
 ## 概要
-Raspberry Pi Picoを使ってYAMAHA PSS-A50にサステインペダルを追加します。
+Raspberry Pi Picoを使ってYAMAHA PSS-A50にサステインペダルを追加します。  
 PSS-A50から送信されたMIDI信号をそのまま送り返し、追加でペダル情報を送信します。
 
 
 ## ビルド済みuf2ファイル
-TODO
+[Releases](https://github.com/ym0268/pico_midi_pedal/releases)
 
 
 ## 使い方
@@ -19,13 +19,13 @@ TODO
 
 
 ## 開発環境
-Windows 11
-Visual Studio 2022
-CMake 3.24.3
+Windows 11  
+Visual Studio 2022  
+CMake 3.24.3  
 
 
 ## ビルド方法 
-事前にpico-sdkとコンパイラの導入を行う必要があります。
+事前にpico-sdkとコンパイラの導入を行う必要があります。  
 https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf
 
 ビルド（Windows）
@@ -43,11 +43,12 @@ nmake
 - 受信したMIDI情報をそのまま送り返しているため、動作がおかしいところがあります。
   - 起動直後の音色がNo.002になっている
   - 初回の録音データ再生時の音色がおかしい
+
   etc
 
 
 ## ライブラリ
-- rppicomidi/tinyusb (forked from hathach/tinyusb)
+- rppicomidi/tinyusb (forked from hathach/tinyusb)  
 https://github.com/rppicomidi/tinyusb
 
 
